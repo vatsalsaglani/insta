@@ -1,0 +1,10 @@
+<span class="user-name">
+  <%= comment.user.user-name %>:
+</span>
+<span class="comment-content">
+  <%= comment.content %>
+</span>
+<% if comment.user == current_user %>
+  <%= link_to post_comment(post, comment), method: :delete, data: { confirm: "Are you sure"} do %>
+  <span class="glyphicon glyphicon-remove delete-comment"></span>
+<% end %> 

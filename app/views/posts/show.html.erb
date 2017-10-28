@@ -1,0 +1,11 @@
+    <%= render 'post', post: @post %>
+      <% if @post.user.id == current_user.id %>
+        <%= link_to "Cancel", posts_path, class: 'btn btn-default' %>
+        |
+        <%= link_to "Edit Post", edit_post_path(@post), class: 'btn btn-default' %>
+      <% else %>
+        <%= link_to "Cancel", posts_path, class: 'btn btn-default' %>
+      <% end %>
+      <% if @user == current_user %>
+        <%= link_to "Edit Profile", edit_profile_path(@user.user_name) %>
+      <% end %>
