@@ -13,6 +13,7 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'font-awesome-rails', '~> 4.4'
+gem 'material_icons'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
